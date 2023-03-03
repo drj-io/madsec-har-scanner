@@ -1,0 +1,19 @@
+{
+  "IncludeHost" : "app.marketing360.com",
+  "ExcludeRouteRegex" : [
+    "\/_next\/*"
+  ],
+  "TokenizePathData" : [
+    {
+      "string": "A1AN3913085ebd5dffbce30",
+      "token" : "AccountNumber"
+    }
+  ],
+  "TokenizeHeaderData": [
+
+  ],
+  "TokenReplacements" : [
+    
+  ]
+
+}
