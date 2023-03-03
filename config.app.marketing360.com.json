@@ -1,19 +1,41 @@
 {
   "IncludeHost" : "app.marketing360.com",
   "ExcludeRouteRegex" : [
-    "\/_next\/*"
+    "\/_next\/*",
+    "\/static\/*"
   ],
   "TokenizePathData" : [
     {
-      "string": "A1AN3913085ebd5dffbce30",
+      "match": "A1AN3913085ebd5dffbce30",
       "token" : "AccountNumber"
+    },
+    {
+      "match": "ce62e284-2a2d-4322-9271-602c483fa3b8",
+      "token" : "UserId"
+    },
+    {
+      "match": "6399eb3d73cba32b7b0d87c3",
+      "token": "FormId"
     }
   ],
   "TokenizeHeaderData": [
-
+    {
+      "HeaderProperty" : "authorization",
+      "match" : "(?<=Bearer ).*",
+      "token" : "BearerToken",
+      "CollectValues" : false,
+      "RegexFlags" : ""
+      
+    }
   ],
   "TokenReplacements" : [
-    
+    {
+      "Token" : "AccountNumber",
+      "Value" : ""
+    }
+  ],
+  "IncludeHeaders" : [
+    "authorization",
+    "user-agent"
   ]
-
 }

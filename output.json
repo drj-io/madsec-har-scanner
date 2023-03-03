@@ -1,0 +1,835 @@
+{
+  "info": {
+    "name": "app.marketing360.com 2023-03-03T21:21:00.789Z",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET - https://app.marketing360.com/",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://app.marketing360.com/",
+          "protocol": "https",
+          "host": [
+            "app",
+            "marketing360",
+            "com"
+          ],
+          "path": [
+            ""
+          ],
+          "query": []
+        }
+      }
+    },
+    {
+      "name": "GET - https://app.marketing360.com/api/users/users/{{UserId}}/profile",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer {{BearerToken}}",
+            "type": "text"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://app.marketing360.com/api/users/users/{{UserId}}/profile",
+          "protocol": "https",
+          "host": [
+            "app",
+            "marketing360",
+            "com"
+          ],
+          "path": [
+            "api",
+            "users",
+            "users",
+            "{{UserId}}",
+            "profile"
+          ],
+          "query": []
+        }
+      }
+    },
+    {
+      "name": "GET - https://app.marketing360.com/api/accounts",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer {{BearerToken}}",
+            "type": "text"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://app.marketing360.com/api/accounts",
+          "protocol": "https",
+          "host": [
+            "app",
+            "marketing360",
+            "com"
+          ],
+          "path": [
+            "api",
+            "accounts"
+          ],
+          "query": []
+        }
+      }
+    },
+    {
+      "name": "GET - https://app.marketing360.com/api/accounts/{{AccountNumber}}",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer {{BearerToken}}",
+            "type": "text"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://app.marketing360.com/api/accounts/{{AccountNumber}}",
+          "protocol": "https",
+          "host": [
+            "app",
+            "marketing360",
+            "com"
+          ],
+          "path": [
+            "api",
+            "accounts",
+            "{{AccountNumber}}"
+          ],
+          "query": []
+        }
+      }
+    },
+    {
+      "name": "GET - https://app.marketing360.com/api/users/v2/permissions/forContext?userId={{UserId}}&accountNumber={{AccountNumber}}&contextType=account&display=true",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer {{BearerToken}}",
+            "type": "text"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://app.marketing360.com/api/users/v2/permissions/forContext?userId={{UserId}}&accountNumber={{AccountNumber}}&contextType=account&display=true",
+          "protocol": "https",
+          "host": [
+            "app",
+            "marketing360",
+            "com"
+          ],
+          "path": [
+            "api",
+            "users",
+            "v2",
+            "permissions",
+            "forContext"
+          ],
+          "query": [
+            {
+              "key": "userId",
+              "value": "{{UserId}}"
+            },
+            {
+              "key": "accountNumber",
+              "value": "{{AccountNumber}}"
+            },
+            {
+              "key": "contextType",
+              "value": "account"
+            },
+            {
+              "key": "display",
+              "value": "true"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET - https://app.marketing360.com/api/users/accounts/{{AccountNumber}}/terms/tos",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer {{BearerToken}}",
+            "type": "text"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://app.marketing360.com/api/users/accounts/{{AccountNumber}}/terms/tos",
+          "protocol": "https",
+          "host": [
+            "app",
+            "marketing360",
+            "com"
+          ],
+          "path": [
+            "api",
+            "users",
+            "accounts",
+            "{{AccountNumber}}",
+            "terms",
+            "tos"
+          ],
+          "query": []
+        }
+      }
+    },
+    {
+      "name": "GET - https://app.marketing360.com/api/users/v2/users/{{UserId}}/agencies/accessForPermission?permission=ui_backoffice_view&contextType=global",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer {{BearerToken}}",
+            "type": "text"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://app.marketing360.com/api/users/v2/users/{{UserId}}/agencies/accessForPermission?permission=ui_backoffice_view&contextType=global",
+          "protocol": "https",
+          "host": [
+            "app",
+            "marketing360",
+            "com"
+          ],
+          "path": [
+            "api",
+            "users",
+            "v2",
+            "users",
+            "{{UserId}}",
+            "agencies",
+            "accessForPermission"
+          ],
+          "query": [
+            {
+              "key": "permission",
+              "value": "ui_backoffice_view"
+            },
+            {
+              "key": "contextType",
+              "value": "global"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET - https://app.marketing360.com/api/users/v2/permissions/forContext?userId={{UserId}}&contextType=global&display=true",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer {{BearerToken}}",
+            "type": "text"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://app.marketing360.com/api/users/v2/permissions/forContext?userId={{UserId}}&contextType=global&display=true",
+          "protocol": "https",
+          "host": [
+            "app",
+            "marketing360",
+            "com"
+          ],
+          "path": [
+            "api",
+            "users",
+            "v2",
+            "permissions",
+            "forContext"
+          ],
+          "query": [
+            {
+              "key": "userId",
+              "value": "{{UserId}}"
+            },
+            {
+              "key": "contextType",
+              "value": "global"
+            },
+            {
+              "key": "display",
+              "value": "true"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET - https://app.marketing360.com/api/users/v2/permissions/forContext?userId={{UserId}}&accountNumber={{AccountNumber}}&contextType=account&display=false",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer {{BearerToken}}",
+            "type": "text"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://app.marketing360.com/api/users/v2/permissions/forContext?userId={{UserId}}&accountNumber={{AccountNumber}}&contextType=account&display=false",
+          "protocol": "https",
+          "host": [
+            "app",
+            "marketing360",
+            "com"
+          ],
+          "path": [
+            "api",
+            "users",
+            "v2",
+            "permissions",
+            "forContext"
+          ],
+          "query": [
+            {
+              "key": "userId",
+              "value": "{{UserId}}"
+            },
+            {
+              "key": "accountNumber",
+              "value": "{{AccountNumber}}"
+            },
+            {
+              "key": "contextType",
+              "value": "account"
+            },
+            {
+              "key": "display",
+              "value": "false"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET - https://app.marketing360.com/api/notifications/{{AccountNumber}}/inapp/?since=2023-02-02T21:20:31.304Z&acknowledged=false",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer {{BearerToken}}",
+            "type": "text"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://app.marketing360.com/api/notifications/{{AccountNumber}}/inapp/?since=2023-02-02T21:20:31.304Z&acknowledged=false",
+          "protocol": "https",
+          "host": [
+            "app",
+            "marketing360",
+            "com"
+          ],
+          "path": [
+            "api",
+            "notifications",
+            "{{AccountNumber}}",
+            "inapp",
+            ""
+          ],
+          "query": [
+            {
+              "key": "since",
+              "value": "2023-02-02T21:20:31.304Z"
+            },
+            {
+              "key": "acknowledged",
+              "value": "false"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET - https://app.marketing360.com/forms/api/v1/forms/{{AccountNumber}}?accountNumber={{AccountNumber}}",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer {{BearerToken}}",
+            "type": "text"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://app.marketing360.com/forms/api/v1/forms/{{AccountNumber}}?accountNumber={{AccountNumber}}",
+          "protocol": "https",
+          "host": [
+            "app",
+            "marketing360",
+            "com"
+          ],
+          "path": [
+            "forms",
+            "api",
+            "v1",
+            "forms",
+            "{{AccountNumber}}"
+          ],
+          "query": [
+            {
+              "key": "accountNumber",
+              "value": "{{AccountNumber}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET - https://app.marketing360.com/forms/api/v1/forms/{{FormId}}?accountNumber={{AccountNumber}}",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer {{BearerToken}}",
+            "type": "text"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://app.marketing360.com/forms/api/v1/forms/{{FormId}}?accountNumber={{AccountNumber}}",
+          "protocol": "https",
+          "host": [
+            "app",
+            "marketing360",
+            "com"
+          ],
+          "path": [
+            "forms",
+            "api",
+            "v1",
+            "forms",
+            "{{FormId}}"
+          ],
+          "query": [
+            {
+              "key": "accountNumber",
+              "value": "{{AccountNumber}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET - https://app.marketing360.com/forms/api/v1/forms/{{FormId}}/field-options?html=1&accountNumber={{AccountNumber}}",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer {{BearerToken}}",
+            "type": "text"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://app.marketing360.com/forms/api/v1/forms/{{FormId}}/field-options?html=1&accountNumber={{AccountNumber}}",
+          "protocol": "https",
+          "host": [
+            "app",
+            "marketing360",
+            "com"
+          ],
+          "path": [
+            "forms",
+            "api",
+            "v1",
+            "forms",
+            "{{FormId}}",
+            "field-options"
+          ],
+          "query": [
+            {
+              "key": "html",
+              "value": "1"
+            },
+            {
+              "key": "accountNumber",
+              "value": "{{AccountNumber}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET - https://app.marketing360.com/forms/api/v1/forms/{{FormId}}/field-options?accountNumber={{AccountNumber}}",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer {{BearerToken}}",
+            "type": "text"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://app.marketing360.com/forms/api/v1/forms/{{FormId}}/field-options?accountNumber={{AccountNumber}}",
+          "protocol": "https",
+          "host": [
+            "app",
+            "marketing360",
+            "com"
+          ],
+          "path": [
+            "forms",
+            "api",
+            "v1",
+            "forms",
+            "{{FormId}}",
+            "field-options"
+          ],
+          "query": [
+            {
+              "key": "accountNumber",
+              "value": "{{AccountNumber}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET - https://app.marketing360.com/forms/api/v1/forms/{{AccountNumber}}?accountNumber={{AccountNumber}}",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer {{BearerToken}}",
+            "type": "text"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://app.marketing360.com/forms/api/v1/forms/{{AccountNumber}}?accountNumber={{AccountNumber}}",
+          "protocol": "https",
+          "host": [
+            "app",
+            "marketing360",
+            "com"
+          ],
+          "path": [
+            "forms",
+            "api",
+            "v1",
+            "forms",
+            "{{AccountNumber}}"
+          ],
+          "query": [
+            {
+              "key": "accountNumber",
+              "value": "{{AccountNumber}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET - https://app.marketing360.com/api/crm/{{AccountNumber}}/translation/bulk?words[]=Project&words[]=Projects&words[]=Deal&words[]=Deals",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer {{BearerToken}}",
+            "type": "text"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://app.marketing360.com/api/crm/{{AccountNumber}}/translation/bulk?words[]=Project&words[]=Projects&words[]=Deal&words[]=Deals",
+          "protocol": "https",
+          "host": [
+            "app",
+            "marketing360",
+            "com"
+          ],
+          "path": [
+            "api",
+            "crm",
+            "{{AccountNumber}}",
+            "translation",
+            "bulk"
+          ],
+          "query": [
+            {
+              "key": "words[]",
+              "value": "Project"
+            },
+            {
+              "key": "words[]",
+              "value": "Projects"
+            },
+            {
+              "key": "words[]",
+              "value": "Deal"
+            },
+            {
+              "key": "words[]",
+              "value": "Deals"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST - https://app.marketing360.com/api/crm/{{AccountNumber}}/contact/index/page/1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer {{BearerToken}}",
+            "type": "text"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://app.marketing360.com/api/crm/{{AccountNumber}}/contact/index/page/1",
+          "protocol": "https",
+          "host": [
+            "app",
+            "marketing360",
+            "com"
+          ],
+          "path": [
+            "api",
+            "crm",
+            "{{AccountNumber}}",
+            "contact",
+            "index",
+            "page",
+            "1"
+          ],
+          "query": []
+        }
+      }
+    },
+    {
+      "name": "GET - https://app.marketing360.com/api/crm/{{AccountNumber}}/contact/filters",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer {{BearerToken}}",
+            "type": "text"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://app.marketing360.com/api/crm/{{AccountNumber}}/contact/filters",
+          "protocol": "https",
+          "host": [
+            "app",
+            "marketing360",
+            "com"
+          ],
+          "path": [
+            "api",
+            "crm",
+            "{{AccountNumber}}",
+            "contact",
+            "filters"
+          ],
+          "query": []
+        }
+      }
+    },
+    {
+      "name": "GET - https://app.marketing360.com/api/crm/{{AccountNumber}}/contact/form",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer {{BearerToken}}",
+            "type": "text"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://app.marketing360.com/api/crm/{{AccountNumber}}/contact/form",
+          "protocol": "https",
+          "host": [
+            "app",
+            "marketing360",
+            "com"
+          ],
+          "path": [
+            "api",
+            "crm",
+            "{{AccountNumber}}",
+            "contact",
+            "form"
+          ],
+          "query": []
+        }
+      }
+    },
+    {
+      "name": "GET - https://app.marketing360.com/forms/api/v1/forms/{{AccountNumber}}?accountNumber={{AccountNumber}}",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer {{BearerToken}}",
+            "type": "text"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://app.marketing360.com/forms/api/v1/forms/{{AccountNumber}}?accountNumber={{AccountNumber}}",
+          "protocol": "https",
+          "host": [
+            "app",
+            "marketing360",
+            "com"
+          ],
+          "path": [
+            "forms",
+            "api",
+            "v1",
+            "forms",
+            "{{AccountNumber}}"
+          ],
+          "query": [
+            {
+              "key": "accountNumber",
+              "value": "{{AccountNumber}}"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "AccountNumber",
+      "value": "A1AN3913085ebd5dffbce30"
+    },
+    {
+      "key": "UserId",
+      "value": "ce62e284-2a2d-4322-9271-602c483fa3b8"
+    },
+    {
+      "key": "FormId",
+      "value": "6399eb3d73cba32b7b0d87c3"
+    },
+    {
+      "key": "BearerToken",
+      "value": ""
+    }
+  ]
+}
